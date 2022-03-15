@@ -17,6 +17,7 @@ gem 'jquery-rails'
 gem 'redcarpet', '~> 3.5.1'
 gem 'sass-rails', '~> 5.0'
 gem 'webpacker', '~> 5'
+gem 'rexml'
 
 # Backend
 gem 'carrierwave'
@@ -24,6 +25,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'jbuilder', '~> 2.5'
 gem 'mini_magick', '~> 4.8'
 gem 'seed-fu', '~> 2.3'
+
 # gem 'rmagick'
 # gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
