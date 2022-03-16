@@ -31,9 +31,9 @@ class TeamsController < ApplicationController
 
   def update
     if @team.owner == current_user
-       @team.update(team_params)
-       redirect_to @team, notice: I18n.t('views.messages.update_team')
-    else current_user != @team.owner
+      @team.update(team_params)
+      redirect_to @team, notice: I18n.t('views.messages.update_team')
+    else
       redirect_to @team, notice: I18n.t('views.messages.failed_to_save_team')
     end
   end
