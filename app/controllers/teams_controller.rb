@@ -50,7 +50,7 @@ class TeamsController < ApplicationController
   def assign_owner
     @owner = @team.update(owner_id: params[:owner_id])
     OwnerMailer.owner_mail(@team.owner).deliver
-    redirect_to team_path, notice: 'オーナー権限が移動しました！'
+    redirect_to team_path, notice: I18n.t('views.messages.change_owner')
   end
 
   private
